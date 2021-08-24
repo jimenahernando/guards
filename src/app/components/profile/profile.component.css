@@ -1,0 +1,16 @@
+.boton{
+    padding: 8px 12px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700; 
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+li{
+    margin: 15px;
+}

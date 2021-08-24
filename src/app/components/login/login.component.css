@@ -1,0 +1,22 @@
+.field, .boton{
+    margin: 10px 0;
+}
+
+.field label, 
+.field input{
+    margin-right: 10px;
+}
+
+.boton{
+    padding: 8px 12px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700; 
+}
+
+.boton:hover{
+    background: black;
+    border: none;
+    color: white;
+}
