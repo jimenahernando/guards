@@ -1,7 +1,7 @@
 <header>
   <button class="boton" [routerLink]="['/']">Home</button>
   <button class="boton" *ngIf="!login" [routerLink]="['login']">Login</button>
-  <button class="boton" *ngIf="login" [routerLink]="['profile']">Profile</button>
-  <button class="boton" *ngIf="login" [routerLink]="['misProductos', id]">Productos</button>
+  <button class="boton" *ngIf="login" [routerLink]="['profile', idUser]">Profile</button>
+  <button class="boton" *ngIf="login" [routerLink]="['misProductos', idUser]">Productos</button>
 </header>
 <router-outlet></router-outlet>

@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   
   login: boolean = false;
-  id: number;
+  idUser: string | null = '';
 
   constructor(){
-    this.id = 0;
   }
 
   ngOnInit(): void {
@@ -19,7 +18,9 @@ export class AppComponent implements OnInit {
   
   ngDoCheck(): void{
     this.login = (localStorage.getItem('logueado') ? true : false );
-    this.id = Number(localStorage.getItem('logueado'));
+    if (localStorage.getItem('logueado')){
+      this.idUser = localStorage.getItem('logueado');
+    }
   }
 }
  
